@@ -12,6 +12,66 @@ $('a[href^="#"]').on('click', function(event) {
 
 });
 
+$(document).ready(function() {
+  var didScroll;
+  var lastScrollTop = 0;
+  var delta = 5;
+  var navbarHeight = $('.header-fixed').outerHeight();
+
+  $(window).scroll(function(){
+    didScroll = true;
+  });
+
+  setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+  }, 250);
+
+  function hasScrolled() {
+    var st = $(this).scrollTop();
+
+    if (Math.abs(lastScrollTop - st) <= delta) return;
+
+    if (st > lastScrollTop && st > navbarHeight)
+      $('.header-fixed').removeClass('nav-down').addClass('nav-up');
+    else if ( st + $(window).height() < $(document).height() )
+      $('.header-fixed').removeClass('nav-up').addClass('nav-down');
+
+    lastScrollTop = st;
+  }
+});
+
+
+//fade
+$(document).ready(function() {
+
+  /* Every time the window is scrolled ... */
+  $(window).scroll( function(){
+
+    /* Check the location of each desired element */
+    $('.fade').each( function(i){
+
+      var bottom_of_object = $(this).position().top + $(this).outerHeight();
+      console.log('bottom of object', bottom_of_object);
+
+      var bottom_of_window = $(window).scrollTop() + $(window).height();
+      console.log('bottom of window', bottom_of_window);
+
+      /* If the object is completely visible in the window, fade it in */
+      if( bottom_of_window > bottom_of_object ){
+
+        $(this).animate({'opacity':'1'},50, "swing");
+
+      }
+
+    });
+
+  });
+
+});
+
 
 // Disable Google Maps scrolling
 // See http://stackoverflow.com/a/25904582/1607849

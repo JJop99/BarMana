@@ -2461,8 +2461,6 @@ i.material-icons {
   padding: 0.5rem 0.5rem;
   font-size: 1.5rem;
   background: #fff;
-  border: 1px solid transparent;
-  border-radius: 0.375rem;
 }
 
 @media (min-width: 576px) {
@@ -2517,7 +2515,6 @@ i.material-icons {
 }
 .navbar-light .navbar-toggler {
   color: rgba(0, 0, 0, 0.5);
-  border-color: rgba(0, 0, 0, 0.1);
   background: none;
 }
 .navbar-light .navbar-toggler-icon {
@@ -2533,9 +2530,6 @@ i.material-icons {
   color: rgba(0, 0, 0, 0.9);
 }
 
-.navbar-dark .navbar-brand {
-  color: white;
-}
 .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
   color: white;
 }
@@ -2555,9 +2549,8 @@ i.material-icons {
   color: white;
 }
 .navbar-dark .navbar-toggler {
-  color: rgba(255, 255, 255, 0.75);
-  border-color: rgba(255, 255, 255, 0.1);
   background: none;
+  border: none;
 }
 .navbar-dark .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.75)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");

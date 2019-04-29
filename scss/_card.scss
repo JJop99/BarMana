@@ -3,7 +3,7 @@
 //
 
 .card {
-  background-color: $card-bg;
+  background-color: $primary;
   border: none;
 
   @include border-radius($card-border-radius);
@@ -52,6 +52,11 @@
 
   > p:last-child {
     margin-bottom: 0;
+  }
+}
+@include media-breakpoint-only(md) {
+  .card-body {
+    padding: 1.25rem;
   }
 }
 

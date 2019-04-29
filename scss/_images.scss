@@ -3,7 +3,8 @@
 // Image thumbnails
 .img-thumbnail {
   padding: $thumbnail-padding;
-  border: $thumbnail-border;
+  border: solid $white;
+  border-width:  1rem 1rem 2.5rem 1rem;
   background-color: $thumbnail-bg;
 
   @include border-radius($thumbnail-border-radius);

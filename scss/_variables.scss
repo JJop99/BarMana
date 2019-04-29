@@ -1,5 +1,7 @@
 // Shards variables
 
+//Seghettatura
+$size: 15px;
 //
 // Color system
 //
@@ -238,7 +240,7 @@ $display4-size: 3.815rem !default;
 $display-line-height: 1 !default;
 $display-margin-bottom: 0.75rem !default;
 
-$paragraphs-margin-bottom: 1.75rem !default;
+$paragraphs-margin-bottom: 0.6rem !default;
 
 $lead-line-height: 1.875rem !default;
 
@@ -681,7 +683,7 @@ $card-header-spacer-y:          ($card-spacer-y / 2) !default;
 $card-footer-spacer-x:          $card-spacer-x !default;
 $card-footer-spacer-y:          ($card-spacer-y / 2) !default;
 
-$card-border-radius:            0.625rem !default;
+$card-border-radius:            0.375rem !default;
 $card-inner-border-radius:      $card-border-radius !default;
 
 $card-cap-bg:                   rgba($blueish-grey, .06) !default;

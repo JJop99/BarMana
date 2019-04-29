@@ -1,22 +1,16 @@
 // Navbar adjustments
 .header-fixed {
   width: 100%;
-  height: 50px;
   z-index: 2;
   position: fixed;
   transition: top 0.2s ease-in-out;
   &.nav-up {
-    top: -50px;
+    top: -63px;
   }
 
   &.nav-down {
     top: 0;
   }
-}
-
-// Navbar
- .navbar {
-  padding: 0rem $navbar-padding-x;
 }
 
 

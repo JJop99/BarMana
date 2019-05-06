@@ -73,6 +73,28 @@ $(document).ready(function() {
 });
 
 
+//Hamburger icon animation
+$(document).ready(function () {
+
+  $('.burger-toggler').on('click', function () {
+
+    $('.burger').toggleClass('open');
+  });
+});
+
+
+
+// Scroll to top button appear
+  $(document).scroll(function() {
+    var scrollDistance = $(this).scrollTop();
+    if (scrollDistance > 100) {
+      $('.scroll-to-top').fadeIn();
+    } else {
+      $('.scroll-to-top').fadeOut();
+    }
+  });
+
+
 // Disable Google Maps scrolling
 // See http://stackoverflow.com/a/25904582/1607849
 // Disable scroll zooming and bind back the click event

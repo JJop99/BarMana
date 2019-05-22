@@ -43,6 +43,23 @@ $(document).ready(function() {
   }
 });
 
+//navbar collapse close on click
+$('.navbar-nav>li>a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+    $hamburger.toggleClass("is-active");
+});
+
+
+
+  var $hamburger = $(".hamburger");
+  $hamburger.on("click", function(e) {
+    $hamburger.toggleClass("is-active");
+    // Do something else, like open/close menu
+  });
+
+
+
+
 
 //fade
 $(document).ready(function() {
@@ -62,7 +79,7 @@ $(document).ready(function() {
       /* If the object is completely visible in the window, fade it in */
       if( bottom_of_window > bottom_of_object ){
 
-        $(this).animate({'opacity':'1'},50, "swing");
+        $(this).animate({'opacity':'1'},10, "swing");
 
       }
 
@@ -70,16 +87,6 @@ $(document).ready(function() {
 
   });
 
-});
-
-
-//Hamburger icon animation
-$(document).ready(function () {
-
-  $('.burger-toggler').on('click', function () {
-
-    $('.burger').toggleClass('open');
-  });
 });
 
 

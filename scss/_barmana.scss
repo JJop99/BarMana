@@ -115,7 +115,7 @@ html {
   height: 30rem;
 }
 
-@media(max-width: 992px) {
+@include media-breakpoint-down(md) {
   .map {
     height: 75%;
   }
@@ -144,9 +144,10 @@ a{
 
 // Scroll to top button
 .scroll-to-top {
-  position: fixed;
-  right: 25px;
-  bottom: 75px;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 1rem;
+  left: 80%;
 
   display: none;
 
@@ -155,7 +156,6 @@ a{
 
   text-align: center;
 
-  color: white;
   background: fade-out($gray-800, .5);
 
   line-height: 55px;
@@ -169,5 +169,21 @@ a{
   }
   i {
     font-weight: 800;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .scroll-to-top {
+    left: 90%;
+  }
+}
+
+.footer-text{
+  color: $navbar-dark-color;
+  a {
+    color: $navbar-dark-color;
+    @include hover-focus {
+      color: $navbar-dark-active-color;
+    }
   }
 }

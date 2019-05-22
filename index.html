@@ -9,6 +9,16 @@
 
         <!-- Favicon -->
         <!-- <link rel="icon" href="images/favicon.ico" /> -->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140669832-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-140669832-1');
+        </script>
+
 
         <!-- Bootstrap core CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -25,14 +35,26 @@
             <img src="images/logo.png" class="pb-1" style="height:35px;" alt="logo">
             <span style="color:#888888">Bar</span> Manà
           </a>
-          <button class="navbar-toggler burger-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <div class="burger"><span></span><span></span><span></span></div>
+
+          <button class="pt-1 navbar-toggler hamburger hamburger--squeeze" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
           </button>
 
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item">
-                <a class="nav-link" href="#menu">Menù</a>
+                <a class="nav-link" href="#cucina">La Cucina</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#enoteca">Enoteca</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#galleria">Galleria</a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="#eventi">Eventi</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#us">Chi siamo</a>
@@ -40,12 +62,12 @@
 
             </ul>
 
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ml-auto lead">
               <li class="nav-item">
                 <a class="nav-link" href="https://www.facebook.com/aperitifmana/"><i class="fa fa-facebook-square"></i></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="https://www.instagram.com/explore/locations/2838519/bar-mana/"><i class="fa fa-instagram"></i></a>
+                <a class="nav-link" href="https://www.instagram.com/bar.mana/"><i class="fa fa-instagram"></i></a>
               </li>
             </ul>
           </div>
@@ -125,29 +147,48 @@
         </div>
 
 
-        <div id="menu" class="container marketing mt-3">
-          <!-- START THE FEATURETTES -->
-          <div class="row fade align-items-center">
-            <div class="col-md-7">
-              <h2 class="text-primary">Menù <span class="text-secondary">del mese.</span></h2>
-              <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-              <p class=""><a class="btn btn-lg btn-outline-primary center" href="menu.html" role="button">Scopri &nbsp;<i class="fa fa-chevron-right"></i></a></p>
-            </div>
-            <div class="col-md-5">
-              <img class="img-fluid m-auto shadow img-thumbnail" src="images/Barmana_hotdog.jpg" alt="Generic placeholder image">
+          <div id="cucina" class="container marketing mt-3">
+            <!-- START THE FEATURETTES -->
+            <div class="row fade align-items-center">
+              <div class="col-md-7">
+                <h2 class="text-primary">Menù <span class="text-secondary">di Giugno.</span></h2>
+                <p class="lead">La cucina dello chef Ranieri è aperta dal Lunedì al Sabato a pranzo, Venerdì e Sabato anche a cena.</p>
+                <p class=""><a class="btn btn-lg btn-outline-primary center" href="menu.html" role="button">Scopri &nbsp;<i class="fa fa-chevron-right"></i></a></p>
+              </div>
+              <div class="col-md-5">
+                <img class="img-fluid m-auto shadow img-thumbnail" src="images/Barmana_hotdog.jpg" alt="Generic placeholder image">
+              </div>
             </div>
           </div>
 
-          <hr class="featurette-divider">
+          <hr id="enoteca" class="featurette-divider">
 
-          <div class="row fade align-items-center">
-            <div class="col-md-7 order-md-2">
-              <h2 class="text-primary">Menù <span class="text-secondary">Alcolici.</span></h2>
-              <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-              <p><a class="btn btn-lg btn-outline-primary" href="#" role="button">Scopri  &nbsp;<i class="fa fa-chevron-right"></i></a></p>
+          <div class="container marketing mt-3">
+            <div class="row fade align-items-center">
+              <div class="col-md-7 order-md-2">
+                <h2 class="text-primary"><span class="text-secondary">Enoteca.</span></h2>
+                <p class="lead"></p>
+                <p><a class="btn btn-lg btn-outline-primary" href="enoteca.html" role="button">Scopri  &nbsp;<i class="fa fa-chevron-right"></i></a></p>
+              </div>
+              <div class="col-md-5">
+                <img class="img-fluid m-auto shadow img-thumbnail" src="images/barista.jpg" alt="Generic placeholder image">
+              </div>
             </div>
-            <div class="col-md-5">
-              <img class="img-fluid m-auto shadow img-thumbnail" src="images/barista.jpg" alt="Generic placeholder image">
+          </div>
+
+          <hr id="eventi" class="featurette-divider">
+
+          <div class="container marketing mt-3">
+            <!-- START THE FEATURETTES -->
+            <div class="row fade align-items-center">
+              <div class="col-md-7">
+                <h2 class="text-primary">Eventi</h2>
+                <p class="lead">Organizziamo anche feste di laurea, compleanni e simili.</p>
+                <p class=""><a class="btn btn-lg btn-outline-primary center" href="menu.html" role="button">Scopri &nbsp;<i class="fa fa-chevron-right"></i></a></p>
+              </div>
+              <div class="col-md-5">
+                <img class="img-fluid m-auto shadow img-thumbnail" src="images/Barmana_hotdog.jpg" alt="Generic placeholder image">
+              </div>
             </div>
           </div>
 
@@ -159,7 +200,9 @@
         <div  class="container section pb-4">
           <h2 class="featurette-heading section-title mt-0 mb-5 text-center text-primary">Chi siamo</h2>
           <div class="text-center">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Siamo il Manà, nel 2012 Marco Bassi e Matteo Bassi rilevano il locale con un progetto di valorizzare la qualità in un angoletto di via Castellaro... <br>
+              Col passare del tempo alla famiglia del Manà si è aggiunto Edoardo Rolfo e in seguito Matteo Russo, anch'essi consapevoli di poter dare un contributo importante all'attività.
+            </p>
           </div>
 
           <div class="card mb-3">
@@ -169,7 +212,7 @@
               </div>
               <div class="col-md-5 col-lg-4">
                 <div class="card-body">
-                  <h2 class="text-secondary">Contatti</h2>
+                  <h2 class="text-secondary">Info</h2>
                   <span class="text-muted d-block mb-2"><i class="fa fa-at"></i> Mail: barmana1897@gmail.com</span>
                   <span class="text-muted d-block mb-2"><i class="fa fa-phone"></i> Tel: +39 346 4765278</span>
                   <span class="pr-4">Sentiti libero di contattarci, anche per organizzare feste o aperitivi.</span>
@@ -192,44 +235,55 @@
 
       </main>
 
+      <!-- Footer -->
+      <footer class="bg-primary">
 
-      <!-- Footer Section -->
-      <footer>
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-          <div class="container">
-            <a class="navbar-brand text-secondary" href="#myCarousel">
-              <img src="images/logo.png" class="pb-1" style="height:35px; " alt="logo">
-              <span style="color:#888888">Bar</span> Manà
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="#menu">Menù</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#us">Chi siamo</a>
-                </li>
-                <li class="nav-item pr-2">
-                  <a class="nav-link" href="#">Privacy</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="https://www.facebook.com/aperitifmana/"><i class="fa fa-facebook-square"></i></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="https://www.instagram.com/explore/locations/2838519/bar-mana/"><i class="fa fa-instagram"></i></a>
-                </li>
-
-              </ul>
+        <!-- Footer Links -->
+        <div class="container text-md-left">
+          <div class="row">
+            <div class="col-8 mt-4 mx-auto text-center">
+              <a class="navbar-brand" href="#">
+                <img src="images/logo.svg" class="d-inline " style="height:50px; " alt="logo">
+                <div class="h3 align-middle text-secondary d-inline" ><span style="color:#888888">Bar</span> Manà</div>
+              </a>
+              <p class="text-white">Un angolo di qualià nel cuore di Modena</p>
             </div>
-
           </div>
-        </nav>
-      </footer>
-      <!-- / Footer Section -->
 
+          <div class="row py-4 align-items-center">
+            <div class="col-12 lead text-center footer-text">
+              <!-- Facebook -->
+              <a href="https://www.facebook.com/aperitifmana/" class="fb-ic ">
+                <i class="fa fa-facebook-square pr-2"> </i>
+              </a>
+
+              <!--Instagram-->
+              <a href="https://www.instagram.com/bar.mana/" class="ins-ic">
+                <i class="fa fa-instagram px-2"> </i>
+              </a>
+              <!--Indirizzo-->
+              <a href="https://goo.gl/maps/XRmTCHFozuPfoJrc6" class="tw-ic">
+                <i class="fa fa-map-marker px-2"> </i>
+              </a>
+              <!--Privacy-->
+              <a href="https://www.iubenda.com/privacy-policy/73231862">
+                <span class="border-left pl-2">Privacy</span>
+              </a>
+
+            </div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col text-center footer-text">
+              <p class="py-5">2019 Sito creato da <a class="" href="http://we-site.it/"> <img src="images/WeSite.svg" class="mb-2" style="width:30px; height:30px;" alt="logo"> <u> WeSite</u></a></p>
+            </div>
+          </div>
+
+
+        </div>
+
+
+      </footer>
+      <!-- Footer -->
 
 
       <!-- JavaScript Dependencies -->

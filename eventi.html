@@ -32,16 +32,28 @@
         <!-- Navigation -->
         <nav id="nav" class="navbar navbar-expand-md navbar-dark bg-primary">
           <a class="navbar-brand text-secondary" href="index.html">
-            <img src="images/logo.png" class="pb-1" style="height:35px; " alt="logo">
+            <img src="images/logo.svg" class="pb-1" style="height:35px; " alt="logo">
             <span style="color:#888888">Bar</span> Manà
           </a>
-          <button class="navbar-toggler burger-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <div class="burger"><span></span><span></span><span></span></div>
+          <button class="pt-1 navbar-toggler hamburger hamburger--squeeze" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
           </button>
+
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item">
-                <a class="nav-link" href="index.html#menu">Menù</a>
+                <a class="nav-link" href="index.html#cucina">La Cucina</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#enoteca">Enoteca</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#galleria">Galleria</a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="#">Eventi</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="index.html#us">Chi siamo</a>
@@ -49,12 +61,12 @@
 
             </ul>
 
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ml-auto lead">
               <li class="nav-item">
                 <a class="nav-link" href="https://www.facebook.com/aperitifmana/"><i class="fa fa-facebook-square"></i></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="https://www.instagram.com/explore/locations/2838519/bar-mana/"><i class="fa fa-instagram"></i></a>
+                <a class="nav-link" href="https://www.instagram.com/bar.mana/"><i class="fa fa-instagram"></i></a>
               </li>
             </ul>
           </div>
@@ -64,15 +76,15 @@
 
       <main role="main">
 
-        <section class="pt-5" id="section-menu">
+        <section class="pt-5 mb-3" id="section-menu">
           <div class="pt-5 container-fluid  bg-primary ">
 
             <div class="row shadow">
               <div class="col-md-12 text-center mb-4 ftco-animate ">
-                <h2 class="display-4" style="color:#888888">Menù del <span class="text-secondary">mese</span></h2>
+                <h2 class="display-4" style="color:#888888">Organizza un <span class="text-secondary">evento</span></h2>
                 <div class="row justify-content-center">
                   <div class="col-md-7">
-                    <p class="lead text-light">Anche questo mese abbiamo preparato qualcosa di speciale per voi.</p>
+                    <p class="lead text-light">Dai compleanni alle lauree, la festa è qui.</p>
                   </div>
                 </div>
 
@@ -84,7 +96,65 @@
           <!-- Seghettatura -->
           <div class="divider"></div>
 
-          <div class="pt-5 container-fluid">
+          <div class="pt-5 container">
+            <div class="row justify-content-center">
+              <div class="col-md-6 col-sm-8 text-center">
+                <!-- Sfizi -->
+                <h3 class="section-title text-capitalize">Le Nostre Formule</h3><br><br>
+
+              </div>
+            </div>
+
+            <div class="card-deck mb-3">
+              <div class="card bg-white mb-4 shadow-sm">
+                <div class="card-header  text-center">
+                  <h4 class="my-0 font-weight-normal"> Small</h4>
+                </div>
+                <div class="card-body bg-white ">
+                  <h1 class="card-title text-center pricing-card-title">15€ <small class="text-muted">/ persona</small></h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>- tramezzini</li>
+                    <li>- pizza</li>
+                    <li>- focacce farcite</li>
+                    <li>- 1 cocktail a scelta servito in caraffa da 1.5 Lt o 1 bottiglia di prosecco ogni 5 persone</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card bg-white mb-4 shadow-sm">
+                <div class="card-header text-center">
+                  <h4 class="my-0 font-weight-normal"> Medium</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title text-center pricing-card-title">20€ <small class="text-muted">/ persona</small></h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>- tramezzini</li>
+                    <li>- pizza</li>
+                    <li>- focacce farcite</li>
+                    <li>- erbazzone</li>
+                    <li>- 1 cocktail a scelta servito in caraffa da 1.5 Lt o 1 bottiglia di prosecco ogni 5 persone</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+              <div class="card bg-white mb-4 shadow-sm">
+                <div class="card-header text-center">
+                  <h4 class="my-0 font-weight-normal"> Large</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title text-center pricing-card-title">25€ <small class="text-muted">/ persona</small></h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>- tramezzini</li>
+                    <li>- pizza</li>
+                    <li>- focacce farcite</li>
+                    <li>- erbazzone</li>
+                    <li>- primo piatto a scelta da concordare</li>
+                    <li>- 1 cocktail a scelta servito in caraffa da 1.5 Lt o 1 bottiglia di prosecco ogni 5 persone</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+
             <div class="row justify-content-center">
               <div class="col-md-6 col-sm-8 text-center">
 
@@ -125,54 +195,68 @@
             </div>
 
           </div>
+
+          <!-- Scroll to Top Button-->
+          <a class="text-white" href="#section-menu">
+            <div class="scroll-to-top rounded js-scroll-trigger ">
+              <i class="fa fa-angle-up fa-2x"></i>
+            </div>
+          </a>
+
         </section>
 
       </main>
 
 
+      <!-- Footer -->
+      <footer class="bg-primary">
 
-      <!-- Footer Section -->
-      <footer>
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-          <div class="container">
-            <a class="navbar-brand text-secondary" href="#">
-              <img src="images/logo.png" class="pb-1" style="height:35px; " alt="logo">
-              <span style="color:#888888">Bar</span> Manà
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html#menu">Menù</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html#us">Chi siamo</a>
-                </li>
-                <li class="nav-item pr-2">
-                  <a class="nav-link" href="index.html">Privacy</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="https://www.facebook.com/aperitifmana/"><i class="fa fa-facebook-square"></i></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="https://www.instagram.com/explore/locations/2838519/bar-mana/"><i class="fa fa-instagram"></i></a>
-                </li>
-
-              </ul>
+        <!-- Footer Links -->
+        <div class="container text-md-left">
+          <div class="row">
+            <div class="col-8 mt-4 mx-auto text-center">
+              <a class="navbar-brand" href="#">
+                <img src="images/logo.svg" class="d-inline " style="height:50px; " alt="logo">
+                <div class="h3 align-middle text-secondary d-inline" ><span style="color:#888888">Bar</span> Manà</div>
+              </a>
+              <p class="text-white">Un angolo di qualià nel cuore di Modena</p>
             </div>
-
           </div>
-        </nav>
+
+          <div class="row py-4 align-items-center">
+            <div class="col-12 lead text-center footer-text">
+              <!-- Facebook -->
+              <a href="https://www.facebook.com/aperitifmana/" class="fb-ic ">
+                <i class="fa fa-facebook-square pr-2"> </i>
+              </a>
+
+              <!--Instagram-->
+              <a href="https://www.instagram.com/bar.mana/" class="ins-ic">
+                <i class="fa fa-instagram px-2"> </i>
+              </a>
+              <!--Indirizzo-->
+              <a href="https://goo.gl/maps/XRmTCHFozuPfoJrc6" class="tw-ic">
+                <i class="fa fa-map-marker px-2"> </i>
+              </a>
+              <!--Privacy-->
+              <a href="https://www.iubenda.com/privacy-policy/73231862">
+                <span class="border-left pl-2">Privacy</span>
+              </a>
+
+            </div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col text-center footer-text">
+              <p class="py-5">2019 Sito creato da <a class="" href="http://we-site.it/"> <img src="images/WeSite.svg" class="mb-2" style="width:30px; height:30px;" alt="logo"> <u> WeSite</u></a></p>
+            </div>
+          </div>
+
+
+        </div>
+
+
       </footer>
-      <!-- / Footer Section -->
-
-      <!-- Scroll to Top Button-->
-      <a class="scroll-to-top rounded js-scroll-trigger" href="#section-menu">
-        <i class="fa fa-angle-up fa-2x"></i>
-      </a>
-
+      <!-- Footer -->
 
       <!-- JavaScript Dependencies -->
       <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>

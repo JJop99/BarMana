@@ -3679,6 +3679,7 @@ body {
 .carousel-item > img {
   width: 100%;
   height: auto;
+  min-height: 32rem;
 }
 
 .carousel-indicators {

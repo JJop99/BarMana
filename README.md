@@ -1,2 +1,2 @@
 # BarMana
-Bar Manà WebSite
+Bar Manà WeSite
